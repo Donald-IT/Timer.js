@@ -1,0 +1,71 @@
+*{padding:0;margin:0;border:0;}
+#myTimer {
+    margin: 10px auto;
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    width: max-content;
+    box-shadow: 0 0 5px 0 black;
+
+    position: relative;
+}
+
+.wrapper__icon {
+    position: relative;
+}
+
+.wrapper__icon::before {
+    content: '';
+    width: 40px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 170%;
+
+    transform: translate(-50%, 0%);
+
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    cursor: pointer;
+
+    background-color: chartreuse;
+}
+
+.wrapper {
+    width: min-content;
+    margin: 20px auto;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+.wrapper::before {
+    content: '';
+    width: 5px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    top: -25px;
+
+    transform: translate(0%, 0);
+
+    cursor: pointer;
+}
+
+.wrapper::after {
+    content: '';
+    width: 5px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    left: 100%;
+    top: -25px;
+
+    transform: translate(-100%, 0);
+
+    cursor: pointer;
+}
